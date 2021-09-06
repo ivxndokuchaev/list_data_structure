@@ -9,10 +9,10 @@ class List {
     public:
         List(int length = 10) : m_length(length), m_clength(0), m_list(new int[length])
         {
-            std::cout << "List is created and initialized with 0s.\n";
             for (int i=0; i<m_length; ++i) {
                 *(m_list + i) = 0;
             }
+            std::cout << "List is created and initialized with 0s.\n";
         }
         
         bool push(int num) {
@@ -84,7 +84,7 @@ class List {
 int main() {
     using namespace std;
 
-    List list;
+    List list(5);
 
     list.push(1);
     list.push(2);
