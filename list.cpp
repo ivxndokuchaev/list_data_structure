@@ -97,7 +97,7 @@ int main() {
     list.shift();
     list.print();
 
-    list.unshift(666);
+    list.unshift(10);
     list.print();
 
     return 0;
